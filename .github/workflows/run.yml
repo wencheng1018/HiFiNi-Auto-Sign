@@ -19,6 +19,6 @@ jobs:
                 go-version: '^1.14'
             - name: HIFINI 自动签到
               env:
-                COOKIE: ${{ bbs_sid=u1lgntrcernrbrm0b9o38j739o; bbs_token=PNy6j4APQUWKmfsWkZu8PdvdRXc0SkWPt3iNmBAZKBFz3irs1VCFHje9kC_2BEYR4F2VCVJyyXAC2z12AG3OkNWbsS8Q0OuSLz }}
+                COOKIE: ${{ secrets.COOKIE }}
                 DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
               run: go run main.go
